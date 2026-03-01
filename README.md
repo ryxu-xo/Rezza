@@ -11,6 +11,18 @@
 </p>
 
 <p align="center">
+   <a href="https://discord.com/oauth2/authorize?client_id=1477343460238561441&permissions=8&scope=bot%20applications.commands">
+      <img src="https://img.shields.io/badge/Invite%20Rezza-5865F2?logo=discord&logoColor=white&style=for-the-badge" alt="Invite Rezza" />
+   </a>
+   <a href="https://github.com/ryxu-xo/Rezza#-quick-start">
+      <img src="https://img.shields.io/badge/Docs-111827?logo=readthedocs&logoColor=white&style=for-the-badge" alt="Docs" />
+   </a>
+   <a href="https://discord.gg">
+      <img src="https://img.shields.io/badge/Support%20Server-4f46e5?logo=discord&logoColor=white&style=for-the-badge" alt="Support Server" />
+   </a>
+</p>
+
+<p align="center">
    Scalable Discord bot architecture with dynamic handlers, Components V2 UI, and Lavalink-powered music.
 </p>
 
