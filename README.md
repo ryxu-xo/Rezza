@@ -88,6 +88,9 @@ npm run dev
 | `DEVELOPER_IDS` | Comma-separated developer user IDs |
 | `NODE_ENV` | `development` or `production` |
 | `LOG_LEVEL` | Logger level (`debug`, `info`, etc.) |
+| `REZZA_DOCS_URL` | Help panel Docs link button URL (optional) |
+| `REZZA_INVITE_URL` | Help panel Invite link button URL (optional) |
+| `REZZA_SUPPORT_URL` | Help panel Support link button URL (optional) |
 | `LAVALINK_HOST` | Lavalink host |
 | `LAVALINK_PORT` | Lavalink port |
 | `LAVALINK_PASSWORD` | Lavalink password |
@@ -99,35 +102,56 @@ npm run dev
 
 ## 🎵 Commands
 
+<!-- COMMANDS:START -->
 <details>
-   <summary><strong>▶ Music Commands</strong></summary>
+  <summary><strong>▶ Music Commands</strong></summary>
 
-   <br />
+  <br />
 
 | Command | Description |
 |---|---|
-| `/play query:<text>` | Play track/playlist from URL or search query |
-| `/search query:<text>` | Join your VC, search top 10 tracks, then pick from dropdown |
-| `/nowplaying` | Show current track with live timing info and progress |
-| `/queue` | Show current song + queued tracks (paginated) |
-| `/seek seconds:<number>` | Jump to a specific position in the current song |
-| `/pause` | Pause playback (or resume if already paused) |
-| `/resume` | Resume playback if paused |
-| `/skip` | Skip currently playing track |
-| `/stop` | Stop playback and destroy player |
+| `/filters preset:<text>` | Apply an audio filter preset to playback. |
+| `/loop mode:<text>` | Set loop mode for the current player. |
+| `/lyrics mode:<text>` | Show song lyrics from LRCLIB in synced or static mode. |
+| `/move from:<number> to:<number>` | Move a queued track to a new position. |
+| `/nowplaying` | Show the currently playing track with live timing info. |
+| `/pause` | Pause playback, or resume if already paused. |
+| `/play query:<text>` | Play a track or playlist from a search query or URL. |
+| `/queue` | Show current song and queued tracks (10 per page). |
+| `/remove position:<number>` | Remove a queued track by position. |
+| `/resume` | Resume playback if the current song is paused. |
+| `/search query:<text>` | Search tracks and pick one from a dropdown menu. |
+| `/seek seconds:<number>` | Jump to a specific time in the current song (in seconds). |
+| `/shuffle` | Shuffle all queued tracks. |
+| `/skip` | Skip the currently playing track. |
+| `/stop` | Stop playback, clear queue, and disconnect from voice. |
+| `/volume level:<number>` | Set playback volume (0-200). |
 
 </details>
 
 <details>
-   <summary><strong>▶ Utility Commands</strong></summary>
+  <summary><strong>▶ Utility Commands</strong></summary>
 
-   <br />
+  <br />
 
 | Command | Description |
 |---|---|
-| `/ping` | Show bot diagnostics and quick interaction actions |
+| `/help category:<text>` | Show interactive help center with command categories. |
+| `/ping` | Show bot latency and live health diagnostics. |
 
 </details>
+
+<details>
+  <summary><strong>▶ Admin Commands</strong></summary>
+
+  <br />
+
+| Command | Description |
+|---|---|
+| `/stats` | Developer-only operational statistics command. |
+
+</details>
+<!-- COMMANDS:END -->
 
 <details>
    <summary><strong>▶ Admin Commands</strong></summary>
