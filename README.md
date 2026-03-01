@@ -17,7 +17,7 @@
    <a href="https://github.com/ryxu-xo/Rezza#-quick-start">
       <img src="https://img.shields.io/badge/Docs-111827?logo=readthedocs&logoColor=white&style=for-the-badge" alt="Docs" />
    </a>
-   <a href="https://discord.gg">
+   <a href="https://discord.gg/rezzasupport">
       <img src="https://img.shields.io/badge/Support%20Server-4f46e5?logo=discord&logoColor=white&style=for-the-badge" alt="Support Server" />
    </a>
 </p>
@@ -111,6 +111,7 @@ npm run dev
 | `LAVALINK_REST_VERSION` | Lavalink REST version (`v3`/`v4`) |
 | `LAVALINK_SEARCH_PLATFORM` | Default search platform (e.g. `ytmsearch`) |
 | `LAVALINK_AUTOPLAY` | Enable autoplay when queue ends |
+| `LAVALINK_24_7` | Keep player connected when queue ends by default |
 
 ## 🎵 Commands
 
@@ -122,6 +123,8 @@ npm run dev
 
 | Command | Description |
 |---|---|
+| `/247 enabled:<text>` | Enable or disable 24/7 mode (stay connected when queue ends). |
+| `/autoplay enabled:<text>` | Enable or disable autoplay recommendations when queue ends. |
 | `/filters preset:<text>` | Apply an audio filter preset to playback. |
 | `/loop mode:<text>` | Set loop mode for the current player. |
 | `/lyrics mode:<text>` | Show song lyrics from LRCLIB in synced or static mode. |
@@ -129,14 +132,16 @@ npm run dev
 | `/nowplaying` | Show the currently playing track with live timing info. |
 | `/pause` | Pause playback, or resume if already paused. |
 | `/play query:<text>` | Play a track or playlist from a search query or URL. |
+| `/playnext query:<text>` | Queue a track or playlist as the next item(s). |
 | `/queue` | Show current song and queued tracks (10 per page). |
 | `/remove position:<number>` | Remove a queued track by position. |
 | `/resume` | Resume playback if the current song is paused. |
+| `/rewind` | Play the previously finished/skipped track again. |
 | `/search query:<text>` | Search tracks and pick one from a dropdown menu. |
 | `/seek seconds:<number>` | Jump to a specific time in the current song (in seconds). |
 | `/shuffle` | Shuffle all queued tracks. |
 | `/skip` | Skip the currently playing track. |
-| `/stop` | Stop playback, clear queue, and disconnect from voice. |
+| `/stop` | Stop playback and clear queue (disconnects unless 24/7 is enabled). |
 | `/volume level:<number>` | Set playback volume (0-200). |
 
 </details>
@@ -161,6 +166,17 @@ npm run dev
 | Command | Description |
 |---|---|
 | `/stats` | Developer-only operational statistics command. |
+
+</details>
+
+<details>
+  <summary><strong>▶ setup Commands</strong></summary>
+
+  <br />
+
+| Command | Description |
+|---|---|
+| `/setup` | Set up or manage the Rezza music request system. |
 
 </details>
 <!-- COMMANDS:END -->
