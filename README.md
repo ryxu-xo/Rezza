@@ -99,7 +99,7 @@ npm run dev
 
 ## 🎵 Commands
 
-<details open>
+<details>
    <summary><strong>▶ Music Commands</strong></summary>
 
    <br />
