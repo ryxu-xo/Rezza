@@ -153,17 +153,6 @@ npm run dev
 </details>
 <!-- COMMANDS:END -->
 
-<details>
-   <summary><strong>▶ Admin Commands</strong></summary>
-
-   <br />
-
-| Command | Description |
-|---|---|
-| `/stats` | Show developer-only runtime statistics |
-
-</details>
-
 ## 🛡️ Notes
 
 - Slash commands are loaded recursively and registered globally on startup.
