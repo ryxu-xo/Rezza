@@ -97,14 +97,48 @@ npm run dev
 | `LAVALINK_SEARCH_PLATFORM` | Default search platform (e.g. `ytmsearch`) |
 | `LAVALINK_AUTOPLAY` | Enable autoplay when queue ends |
 
-## 🎵 Music Commands
+## 🎵 Commands
+
+<details open>
+   <summary><strong>▶ Music Commands</strong></summary>
+
+   <br />
 
 | Command | Description |
 |---|---|
 | `/play query:<text>` | Play track/playlist from URL or search query |
+| `/search query:<text>` | Join your VC, search top 10 tracks, then pick from dropdown |
+| `/nowplaying` | Show current track with live timing info and progress |
 | `/queue` | Show current song + queued tracks (paginated) |
+| `/seek seconds:<number>` | Jump to a specific position in the current song |
+| `/pause` | Pause playback (or resume if already paused) |
+| `/resume` | Resume playback if paused |
 | `/skip` | Skip currently playing track |
 | `/stop` | Stop playback and destroy player |
+
+</details>
+
+<details>
+   <summary><strong>▶ Utility Commands</strong></summary>
+
+   <br />
+
+| Command | Description |
+|---|---|
+| `/ping` | Show bot diagnostics and quick interaction actions |
+
+</details>
+
+<details>
+   <summary><strong>▶ Admin Commands</strong></summary>
+
+   <br />
+
+| Command | Description |
+|---|---|
+| `/stats` | Show developer-only runtime statistics |
+
+</details>
 
 ## 🛡️ Notes
 
